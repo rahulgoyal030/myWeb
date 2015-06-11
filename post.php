@@ -15,7 +15,7 @@ if (isset($_POST['textArea'])) {
     $textdesc = $_POST['textArea'];
 }
 
-$sql = "INSERT INTO `news`(`id`, `name`, `post`, `date`) VALUES (NULL,'rah','$textdesc','12 june')";
+$sql = "INSERT INTO `news`(`id`, `name`, `post`, `date`) VALUES (NULL,'$_SESSION[sesName]','$textdesc','12 june')";
 mysqli_query($conn, $sql);
 
 header('Location: /myWeb/news.php'); 

@@ -21,9 +21,12 @@ if (mysqli_num_rows($result) > 0) {
         if($_POST["user"]==$row["name"]&&$_POST["password"]==$row["password"])
         {
         // echo "id: " . $row["name"]. " - Name: " . $row["password"]. "   welcome to the database " ;
-           $_SESSION["sesName"]= $_POST["name"];
+           $_SESSION["sesName"]= $_POST["user"];
 
-           header('Location: /myWeb/news.php'); 
+          // echo '<p>'. $_SESSION["sesName"] .'<p>';
+
+
+          header('Location: /myWeb/news.php'); 
         }
 
     }
