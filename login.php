@@ -12,13 +12,13 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT name,password FROM data";
+$sql = "SELECT username,password FROM signup";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
-        if($_POST["user"]==$row["name"]&&$_POST["password"]==$row["password"])
+        if($_POST["user"]==$row["username"]&&$_POST["password"]==$row["password"])
         {
         // echo "id: " . $row["name"]. " - Name: " . $row["password"]. "   welcome to the database " ;
            $_SESSION["sesName"]= $_POST["user"];
