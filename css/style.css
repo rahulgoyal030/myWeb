@@ -81,8 +81,8 @@ body{
 }
 
 .login input[type=password]{
-	width: 250px;
-	height: 30px;
+	width: 260px;
+	height: 36px;
 	background: transparent;
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 2px;
@@ -132,11 +132,11 @@ body{
 }
 
 ::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
+   color: rgba(173, 222, 239,0.7);
 }
 
 ::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
+   color: rgba(173, 222, 239,0.7);
 }
 
 #signUp{
